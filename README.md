@@ -7,13 +7,6 @@ Tecnologias Usadas:
 HTML: Para a estrutura da página.
 CSS: Para o estilo visual e layout.
 Imagens: Utilizadas para ilustrar o conceito e produtos do site.
-Como Usar
-Clone ou baixe este repositório:
-
-
-Copiar código
-git clone https://github.com/seu-usuario/CoffeExpress.git
-Abra o arquivo index.html no seu navegador para visualizar o site.
 
 Objetivo
 Este projeto tem como objetivo demonstrar minhas habilidades de desenvolvimento web com um layout simples e intuitivo, focando na experiência do usuário e no design visual.
