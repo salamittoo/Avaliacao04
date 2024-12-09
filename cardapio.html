@@ -280,6 +280,7 @@
     </section>
 
 
+   
     <section class="pedido">
       <h2>Faça já seu pedido!</h2>
       <form action="enviar_pedido.html" method="get">
@@ -303,6 +304,27 @@
         </label>
         <label>Quantidade:
           <input type="number" min="0" value="1" /></label>
+
+        <label>Selecione uma Bebida:
+          <select name="bebida">
+            <option value="vitamina">Abacate</option>
+            <option value="suco">Graviola</option>
+          </select>
+        </label>
+        <label>Quantidade:
+          <input type="number" min="0" value="1" /></label><br /><br />
+
+         <label>Selecione uma Lanche:
+          <select name="lanche">
+            <option value="assado">Empada frango</option>
+            <option value="frito">Coxinha</option>
+             <option value="sanduiche">Peito Perú</option>
+          </select>
+        </label>
+        <label>Quantidade:
+          <input type="number" min="0" value="1" /></label><br /><br />
+
+
 
         <button type="submit">Enviar Pedido</button>
       </form>
