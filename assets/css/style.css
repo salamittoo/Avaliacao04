@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f0e1;
+  color: #6f4f28;
+  padding-top: 80px;
+  
+}
+
+header {
+  background-color: #A57C4D;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  z-index: 10;
+}
+
+header .logo {
+  height: 80px;
+  border-radius: 50%;
+}
+
+nav ul {
+  margin-right: 25px;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5f0e1;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #d1a15f;
+}
+
+.Title-logo {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: aliceblue;
+}
+
+.Title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.intro .image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.image {
+  margin-top: 40px;
+}
+
+.image-main {
+  position: fixed;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.produtos {
+  padding: 32px;
+  text-align: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.produtos1 {
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.produtos1:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.produtos h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.produtos a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.produtos img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.carrosel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.produtos p {
+  margin-top: 8px;
+}
+
+.Pag-login {
+  margin-top: 200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: rgba(209, 196, 158, 0.507);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+}
+
+.sub a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+button {
+  margin: 10px;
+  width: 50%;
+  padding: 10px;
+  background-color: #6f4f28;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d1a15f;
+}
+
+.Pag-Cad {
+  margin-top: 200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bk {
+  background-image: url(../img/justbackground.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #6f4f1f;
+  color: #f5f0e1;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 200px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .bk {
+    background-image: url(../img/justbackground\(2\).png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+
+  .Title-logo {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .produtos {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .produtos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carrosel {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .produtos1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .Title {
+    font-size: 20px;
+  }
+
+  .produtos h2 {
+    font-size: 28px;
+  }
+
+  .produtos {
+    padding: 10px;
+  }
+
+  .produtos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carrosel {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .produtos1 {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}

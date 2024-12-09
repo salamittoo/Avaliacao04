@@ -1,0 +1,210 @@
+@import url("style.css");
+
+.sobre-secao {
+  margin-top: 60px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color:  #e9e0d1;
+  border-radius: 30px;
+  
+}
+.sobre-secao h2{
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+}
+.sobre-secao p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  justify-content: center;
+}
+
+.funcionarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.funcionario {
+  width: 200px;
+  height: 300px;
+  background-color: #fff8ec;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
+}
+
+.funcionario:hover {
+  transform: scale(1.1); 
+}
+
+.funcionario img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+  object-position: center; 
+}
+
+.funcionario h3 {
+  color: #6f4f1f;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.funcionario p {
+  font-size: 0.9em;
+  color: #4B3B27;
+}
+
+
+.scroll {
+  padding: 40px;
+  background-color: #F4F1E1;
+}
+.scroll h2{
+  text-align: center;
+}
+
+.galeria {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.contato {
+  padding: 40px;
+  text-align: center;
+  background-color: #FFF8E7;
+}
+
+.contato h2 {
+  color: #8B4513;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contato p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.icones-contato {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.icone {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: #8B4513;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icone:hover {
+  transform: scale(1.2);
+  color: #D2691E;
+}
+
+
+@media (max-width: 768px) {
+
+  .sobre-secao{
+    margin-left: 30px;
+  }
+
+  .sobre-secao h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sobre-secao p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .funcionario {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .funcionarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .galeria {
+    padding: 20px;
+    background-color: #F4F1E1;
+  }
+
+  .imagens-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .imagens-galeria img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .imagens-galeria img:hover {
+    transform: scale(1.1);
+  }
+
+  .contato {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .icones-contato {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .icone {
+    font-size: 30px;
+    color: #8B4513;
+    transition: transform 0.3s, color 0.3s;
+  }
+
+  .icone:hover {
+    transform: scale(1.2);
+    color: #D2691E;
+  }
+
+  .contato p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+}
